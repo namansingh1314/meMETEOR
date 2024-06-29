@@ -1,4 +1,9 @@
-
+// ██╗░░░██╗██╗███████╗░██╗░░░░░░░██╗  ██████╗░░█████╗░░██████╗░███████╗
+// ██║░░░██║██║██╔════╝░██║░░██╗░░██║  ██╔══██╗██╔══██╗██╔════╝░██╔════╝
+// ╚██╗░██╔╝██║█████╗░░░╚██╗████╗██╔╝  ██████╔╝███████║██║░░██╗░█████╗░░
+// ░╚████╔╝░██║██╔══╝░░░░████╔═████║░  ██╔═══╝░██╔══██║██║░░╚██╗██╔══╝░░
+// ░░╚██╔╝░░██║███████╗░░╚██╔╝░╚██╔╝░  ██║░░░░░██║░░██║╚██████╔╝███████╗
+// ░░░╚═╝░░░╚═╝╚══════╝░░░╚═╝░░░╚═╝░░  ╚═╝░░░░░╚═╝░░╚═╝░╚═════╝░╚══════╝
 
 document.addEventListener("DOMContentLoaded", function () {
   const memesList = document.getElementById("memes-list");
@@ -47,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Call the Imgflip API to update the meme with new captions
         fetch(
-          `https://api.imgflip.com/caption_image?template_id=${memeId}&username=NamanSingh2&password=#Coccrbb10&boxes[0][text]=${captionValues[0]}&boxes[1][text]=${captionValues[1]}&boxes[2][text]=${captionValues[2]}&boxes[3][text]=${captionValues[3]}&boxes[4][text]=${captionValues[4]}`,
+          `https://api.imgflip.com/caption_image?template_id=${memeId}&username=DHRUVARORA1&password=674022sd&boxes[0][text]=${captionValues[0]}&boxes[1][text]=${captionValues[1]}&boxes[2][text]=${captionValues[2]}&boxes[3][text]=${captionValues[3]}&boxes[4][text]=${captionValues[4]}`,
           {
             method: "POST",
           }
@@ -96,6 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// ██╗░░██╗░█████╗░███╗░░░███╗███████╗
+// ██║░░██║██╔══██╗████╗░████║██╔════╝
+// ███████║██║░░██║██╔████╔██║█████╗░░
+// ██╔══██║██║░░██║██║╚██╔╝██║██╔══╝░░
+// ██║░░██║╚█████╔╝██║░╚═╝░██║███████╗
+// ╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚══════╝
 
 const menuButton = document.getElementById("menu-icon");
 const navList = document.getElementById("navlist");
@@ -108,6 +119,12 @@ menuButton.addEventListener("click", () => {
   }
 });
 
+// ░█████╗░██╗░░██╗░█████╗░██╗░█████╗░███████╗
+// ██╔══██╗██║░░██║██╔══██╗██║██╔══██╗██╔════╝
+// ██║░░╚═╝███████║██║░░██║██║██║░░╚═╝█████╗░░
+// ██║░░██╗██╔══██║██║░░██║██║██║░░██╗██╔══╝░░
+// ╚█████╔╝██║░░██║╚█████╔╝██║╚█████╔╝███████╗
+// ░╚════╝░╚═╝░░╚═╝░╚════╝░╚═╝░╚════╝░╚══════╝
 
 function fetchMemes() {
   const apiUrl = "https://api.imgflip.com/get_memes";
@@ -158,7 +175,12 @@ function displayMemes(data) {
 }
 fetchMemes();
 
-
+// ░██████╗░███████╗███╗░░██╗███████╗██████╗░░█████╗░████████╗███████╗  ██████╗░░█████╗░░██████╗░███████╗
+// ██╔════╝░██╔════╝████╗░██║██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔════╝  ██╔══██╗██╔══██╗██╔════╝░██╔════╝
+// ██║░░██╗░█████╗░░██╔██╗██║█████╗░░██████╔╝███████║░░░██║░░░█████╗░░  ██████╔╝███████║██║░░██╗░█████╗░░
+// ██║░░╚██╗██╔══╝░░██║╚████║██╔══╝░░██╔══██╗██╔══██║░░░██║░░░██╔══╝░░  ██╔═══╝░██╔══██║██║░░╚██╗██╔══╝░░
+// ╚██████╔╝███████╗██║░╚███║███████╗██║░░██║██║░░██║░░░██║░░░███████╗  ██║░░░░░██║░░██║╚██████╔╝███████╗
+// ░╚═════╝░╚══════╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝  ╚═╝░░░░░╚═╝░░╚═╝░╚═════╝░╚══════╝
 
 let clicked = false;
 const urlParams = new URLSearchParams(window.location.search);
@@ -193,7 +215,7 @@ textForm.addEventListener("submit", function (event) {
   // Call the Imgflip API to generate the meme
   else {
     fetch(
-      `https://api.imgflip.com/caption_image?template_id=${id}&username=NamanSingh2&password=#Coccrbb10&boxes[0][text]=${captions[0]}&boxes[1][text]=${captions[1]}&boxes[2][text]=${captions[2]}&boxes[3][text]=${captions[3]}&boxes[4][text]=${captions[4]}`,
+      `https://api.imgflip.com/caption_image?template_id=${id}&username=DHRUVARORA1&password=674022sd&boxes[0][text]=${captions[0]}&boxes[1][text]=${captions[1]}&boxes[2][text]=${captions[2]}&boxes[3][text]=${captions[3]}&boxes[4][text]=${captions[4]}`,
       {
         method: "POST",
       }
